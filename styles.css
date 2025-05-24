@@ -1,0 +1,361 @@
+body {
+  font-family: sans-serif;
+  background-color: #1f1f1f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/*navbar*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1f1f1f;
+}
+
+.navbar .logo {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+/*hero*/
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  background-image: url("https://th.bing.com/th/id/R.5434c2a82c14d398801d7fed387fb286?rik=F%2fymVILY0GVvfw&riu=http%3a%2f%2feskipaper.com%2fimages%2fblack-backgrounds-4.jpg&ehk=nd7pXfY0tZfMpnbmKVbm9Y%2f9Cdjp7ogXL%2b7v7NJWxZI%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 1.7rem;
+  font-weight: 300;
+  margin: 20px 0;
+  max-width: 650px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4f6efb;
+  color: white;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #3f5de7;
+  transform: translateY(-5px);
+}
+
+.hero-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  margin-left: 50px;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+}
+/*about*/
+
+.about-section {
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about-header {
+  margin-bottom: 40px;
+}
+
+.about-title {
+  color: #f5f5f5;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.about-body {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.about-description {
+  font-size: 1.8em;
+  line-height: 1.8;
+  text-align: left;
+  max-width: 600px;
+  color: #cccccc;
+}
+
+.about-description strong {
+  color: #ff5722;
+}
+
+.btn.download-cv {
+  background-color: #ff5722;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.btn.download-cv:hover {
+  background-color: #e64a19;
+}
+
+/*service*/
+
+.services-section {
+  background-color: #1c1c1c;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.services-subtitle {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.services-subtitle .highlight {
+  color: #ff5722;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.service-icon {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.7em;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.service-card a {
+  background-color: #ff5722;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.service-card a:hover {
+  background-color: #e64a19;
+}
+
+/*projects*/
+
+.projects-section {
+  min-height: 100vh;
+  background-color: #1c1c1c;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.project-card h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.project-card p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #d3d3d3;
+}
+
+.project-card a {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.project-card a:hover {
+  background-color: #0056b3;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Connect*/
+.connect {
+  margin-top: 50px;
+}
+
+.connect h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.btn-linkedin,
+.btn-instagram {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-linkedin {
+  background-color: #0077b5;
+  color: #ffffff;
+}
+
+.btn-linkedin:hover {
+  background-color: #005582;
+}
+
+.btn-instagram {
+  background-color: #e4405f;
+  color: #ffffff;
+}
+
+.btn-instagram:hover {
+  background-color: #c13545;
+}
+.btn,
+.service-card a,
+.project-card a {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
